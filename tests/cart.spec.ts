@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { users } from '../test-data/users';
-test('problem_user - botão Remove permanece após remover produto', async ({ page }) => {
+test('BUG-001 - problem_user - botão Remove permanece após remover produto', async ({ page }) => {
 await page.goto('https://www.saucedemo.com/');
 await page.locator('[data-test="username"]').fill(users.problem.username);
 await page.locator('[data-test="password"]').fill(users.problem.password);
